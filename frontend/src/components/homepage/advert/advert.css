@@ -10,7 +10,7 @@
 .advertfour_header span {
     font-size: 1.35rem;
     line-height: 1.6875rem;
-    color: var(--primary-color);
+    color: var(--primary-dark-color);
 }
 .advertfour_body img {
     width: auto;
@@ -21,8 +21,8 @@
     padding: 1rem 0;
 }
 .advertfour_footer a {
-    color: rgb(50, 104, 86);
+    color: var(--click-visited);
 }
 .advertfour_footer a:hover {
-    color: orangered;
+    color: var(--click-hover);
 }

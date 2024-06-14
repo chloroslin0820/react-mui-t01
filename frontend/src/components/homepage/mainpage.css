@@ -1,10 +1,11 @@
 .mainpage {
     width: 100vw;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(238, 236, 236, 1) 10%, aliceblue);
+    background: linear-gradient(to bottom, rgba(238, 236, 236, 1) 10%, #e3e6e6);
     position: relative;
     z-index: 1;
     display: flex;
+    padding: 0 3% 2rem;
 }
 .mainpage_bg_image {
     position: absolute;
@@ -12,6 +13,7 @@
     left: 0;
     width: 100vw;
     z-index: -1;
+    margin-bottom: 2rem;
 }
 
 .advert_container {

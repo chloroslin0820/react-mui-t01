@@ -1,9 +1,4 @@
 /* base */
-:root {
-    --sprite-link: url('https://ik.imagekit.io/chlorosimg/amazon-image/sprite_350x.png');
-    --primary-color: #131922;
-    --secondary-color: #febe68;
-}
 h6 {
     font-weight: normal;
     font-size: .75rem;
@@ -17,7 +12,7 @@ span {
 .navbar_component {
     width: 100vw;
     height: 3.75rem;
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark-color);
     display: flex;
     padding-top: .3rem;
     justify-content: center;
@@ -63,7 +58,7 @@ span {
     margin-top: .5rem;
 }
 .navbar_search_icon_container {
-    background-color: var(--secondary-color);
+    background-color: var(--amazon-orange-color);
     height: 2.4rem;
     width: 3rem;
     border-radius: 0 .3125rem .3125rem 0;
@@ -109,15 +104,14 @@ span {
     position: absolute;
     top: -0.6rem;
     left: 1.8rem;
-    color: var(--secondary-color);
+    color: var(--amazon-orange-color);
 }
 
 /* footer */
 .navbar_footer {
     width: 100vw;
     height: 2.5rem;
-    background-color: var(--primary-color);
-    opacity: 0.85;
+    background-color: var(--secondary-dark-color);
     display: flex;
     color: white;
     align-items: center;
