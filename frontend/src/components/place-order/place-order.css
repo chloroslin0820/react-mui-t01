@@ -1,0 +1,81 @@
+hr {
+    margin: .5rem 0;
+}
+
+.place_order {
+    width: 100vw;
+    height: 100%;
+}
+.place_order_img_grid {
+    margin: 30% 20%;
+}
+.place_order_img {
+    width: 20rem;
+}
+.place_order_detail {
+    margin: 20% 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.place_order_name {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.4375rem;
+}
+.place_order_rating_row {
+    display: flex;
+}
+.place_order_price span {
+    font-size: 1.5rem;
+    color: orangered;
+}
+.place_order_price p {
+    margin: .625rem 0;
+}
+.place_order_attention {
+    margin-top: 1rem;
+    line-height: 1.75rem;
+    font-size: 1.1rem;
+    color: green;
+}
+.product_features .feature_row p {
+    font-size: .8rem;
+}
+.place_order_paper.upper {
+    display: flex;
+    margin-top: 9rem;
+    width: 13rem;
+    font-size: .81rem;
+    padding: 1rem 1.5rem;
+}
+.place_order_paper.upper a {
+    color: var(--click-visited);
+}
+.place_order_paper.upper a:hover {
+    color: var(--click-hover);
+}
+.place_order_paper.lower {
+    display: flex;
+    margin-top: .9rem;
+}
+.place_order_paper.lower h4 {
+    font-weight: normal;
+    font-size: .9rem;
+    padding: 1rem 1.2rem 0;
+    color: orangered;
+}
+.place_order_purchase {
+    width: 12.5rem;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.2rem 5rem;
+}
+.place_order_btn {
+    width: 10rem;
+    border: 1px orangered;
+    background-color: lightsalmon;
+    border-radius: .25rem;
+    padding: .1rem 0;
+    color: var(--primary-dark-color);
+}

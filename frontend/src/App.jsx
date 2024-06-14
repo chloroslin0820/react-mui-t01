@@ -1,6 +1,6 @@
-import DisplayContent from './components/display-content/DisplayContent';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navigation';
+import PlaceOrder from './components/place-order/PlaceOrder';
 
 function App() {
 
@@ -8,7 +8,8 @@ function App() {
     <>
       <Navbar />
       {/* <MainPage /> */}
-      <DisplayContent />
+      {/* <DisplayContent /> */}
+      <PlaceOrder />
       <Footer />
     </>
   );

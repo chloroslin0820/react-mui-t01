@@ -56,6 +56,8 @@ span {
     width: 36rem;
     height: 2.375rem;
     margin-top: .5rem;
+    font-size: 1rem;
+    padding-left: .5rem;
 }
 .navbar_search_icon_container {
     background-color: var(--amazon-orange-color);

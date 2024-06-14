@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from 'react';
+import { Products as mockData } from '../../../products-mockdata/ProductMockData.js';
 import ProductCard from './product-card/ProductCard';
-import { Products as mockData } from './products-mockdata/ProductMockData.js';
 import './right-panel.css';
 
 const RightPanel = () => {
