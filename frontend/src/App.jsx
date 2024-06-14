@@ -1,5 +1,5 @@
+import DisplayContent from './components/display-content/DisplayContent';
 import Footer from './components/footer/Footer';
-import MainPage from './components/homepage/MainPage';
 import Navbar from './components/navbar/Navigation';
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <MainPage />
+      {/* <MainPage /> */}
+      <DisplayContent />
       <Footer />
     </>
   );

@@ -1,0 +1,23 @@
+.product_card {
+    width: 14.8rem;
+}
+.product_card_img_container {
+
+}
+.product_card_img_container img {
+    height: 18.75rem;
+}
+.product_card_name_container{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+.product_card_rating_container {
+    font-size: .875rem;
+    color: #a0d0c0;
+}
+.product_card_price_container {
+    color: orangered;
+    font-size: 1.25rem;
+    font-weight: 600;
+}

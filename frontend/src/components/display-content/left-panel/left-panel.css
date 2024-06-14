@@ -1,0 +1,15 @@
+.left_panel {
+    height: 100%;
+    width: 20vw;
+    background-color: aliceblue;
+    border-right: 1px solid lightgray;
+    margin-right: 1rem;
+}
+.left_panel_brand {
+}
+.left_panel_brand_header {
+    margin-bottom: .3rem;
+}
+.left_panel_brand_name_list label input {
+    margin-bottom: .3rem;
+}
