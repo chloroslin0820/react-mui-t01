@@ -1,0 +1,28 @@
+.advertfour_main {
+    height: 25rem;
+    width: 18rem;
+    background: white;
+    padding: 1rem;
+}
+.advertfour_header {
+    margin-bottom: 1rem;
+}
+.advertfour_header span {
+    font-size: 1.35rem;
+    line-height: 1.6875rem;
+    color: var(--primary-color);
+}
+.advertfour_body img {
+    width: auto;
+    height: 6.25rem;
+    padding: .2rem;
+}
+.advertfour_footer {
+    padding: 1rem 0;
+}
+.advertfour_footer a {
+    color: rgb(50, 104, 86);
+}
+.advertfour_footer a:hover {
+    color: orangered;
+}

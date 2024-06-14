@@ -1,0 +1,135 @@
+/* base */
+:root {
+    --sprite-link: url('https://ik.imagekit.io/chlorosimg/amazon-image/sprite_350x.png');
+    --primary-color: #131922;
+    --secondary-color: #febe68;
+}
+h6 {
+    font-weight: normal;
+    font-size: .75rem;
+}
+span {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+/* component */
+.navbar_component {
+    width: 100vw;
+    height: 3.75rem;
+    background-color: var(--primary-color);
+    display: flex;
+    padding-top: .3rem;
+    justify-content: center;
+}
+
+.navbar_logo {
+    background: var(--sprite-link) no-repeat -9px -50px;
+	width: 6.125rem;
+	height: 1.9375rem;
+    margin: .625rem;
+}
+
+.navbar_locator {
+    display: flex;
+    margin: .75rem .5rem;
+}
+.navbar_location {
+    color: white;
+    font-weight: bold;
+    margin-left: .3125rem;
+}
+.navbar_locator_image {
+    background: var(--sprite-link) no-repeat -70px -305px;
+	width: 1.1875rem;
+	height: 1.375rem;
+}
+
+.navbar_search_component {
+    display: flex;
+    margin-left: .75rem;
+}
+.navbar_search_dropdown {
+    width: 3.75rem;
+    height: 2.4rem;
+    margin-top: .5rem;
+    background-color: #e6e5e5;
+    border-radius: .3125rem 0 0 .3125rem;
+    text-align-last: center;
+}
+.navbar_search_box {
+    width: 36rem;
+    height: 2.375rem;
+    margin-top: .5rem;
+}
+.navbar_search_icon_container {
+    background-color: var(--secondary-color);
+    height: 2.4rem;
+    width: 3rem;
+    border-radius: 0 .3125rem .3125rem 0;
+    margin-top: .5rem;
+}
+.navbar_search_icon {
+    background: var(--sprite-link) no-repeat -9px -289px;
+	width: 1.4375rem;
+	height: 1.4375rem;
+    margin: .55rem .7rem;
+}
+
+.navbar_right {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    width: auto;
+    height: 3.2rem;
+    margin-left: 1.05rem;
+}
+.navbar_right_cart {
+    display: flex;
+    line-height: 48px;
+    position: relative;
+}
+.navbar_right_sign_in,
+.navbar_right_return,
+.navbar_right_cart {
+    padding: .5rem;
+}
+.navbar_right_sign_in:hover,
+.navbar_right_return:hover,
+.navbar_right_cart:hover {
+    border: .1rem solid white;
+}
+.navbar_right_cart .cart_img {
+    background: var(--sprite-link) no-repeat -217px -336px;
+	width: 43px;
+	height: 30px;
+    margin-right: .25rem;
+}
+.navbar_right_cart .cart_badge {
+    position: absolute;
+    top: -0.6rem;
+    left: 1.8rem;
+    color: var(--secondary-color);
+}
+
+/* footer */
+.navbar_footer {
+    width: 100vw;
+    height: 2.5rem;
+    background-color: var(--primary-color);
+    opacity: 0.85;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0 1rem;
+}
+.navbar_footer_menu {
+    display: flex;
+}
+.navbar_footer_menu .navbar_footer_text {
+    margin: 0.2rem 0 0 -.3rem;
+}
+.navbar_footer_text span {
+    margin: .25rem .5rem;
+    font-weight: normal;
+}
