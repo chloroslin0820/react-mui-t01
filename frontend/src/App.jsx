@@ -1,6 +1,6 @@
+import CheckPage from './components/checkpage/CheckPage';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navigation';
-import PlaceOrder from './components/place-order/PlaceOrder';
 
 function App() {
 
@@ -9,7 +9,8 @@ function App() {
       <Navbar />
       {/* <MainPage /> */}
       {/* <DisplayContent /> */}
-      <PlaceOrder />
+      {/* <PlaceOrder /> */}
+      <CheckPage />
       <Footer />
     </>
   );
