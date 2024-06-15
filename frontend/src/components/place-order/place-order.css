@@ -6,11 +6,69 @@ hr {
     width: 100vw;
     height: 100%;
 }
+.place_order_left_right {
+    display: flex;
+    width: 90rem;
+}
+@media (max-width: 64rem) {
+    .place_order_left_right {
+        width: 80rem;
+    }
+}
+@media (max-width: 60rem) {
+    .place_order_left_right {
+        width: 65rem;
+    }
+}
+@media (max-width: 54rem) {
+    .place_order_left_right {
+        width: 62rem;
+    }
+}
+@media (max-width: 528px) {
+    .place_order_left_right {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 15% 10%;
+    }
+}
+@media (max-width: 33rem) {
+    .place_order_left_right {
+        margin: 0 1rem;
+    }
+}
+
 .place_order_img_grid {
-    margin: 30% 20%;
+    margin: 30% 10%;
 }
 .place_order_img {
-    width: 20rem;
+    width: 35vw;
+}
+@media (max-width: 64rem) {
+    .place_order_img_grid {
+        margin: 30% 5%;
+        width: 15rem;
+    }
+}
+@media (max-width: 48rem) {
+    .place_order_img_grid {
+        margin: 30% 15%;
+        width: 25rem;
+    }
+}
+@media (max-width: 33rem) {
+    .place_order_img_grid {
+        margin: 0;
+    }
+    .place_order_img {
+        width: 14rem;
+    }
+}
+
+.place_order_right_side {
+    margin-left: .5rem;
+    display: flex;
+    width: 60rem;
 }
 .place_order_detail {
     margin: 20% 2rem 0;
@@ -40,6 +98,49 @@ hr {
 }
 .product_features .feature_row p {
     font-size: .8rem;
+}
+@media (max-width: 48rem) {
+    .place_order_right_side {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 2rem;
+        width: auto;
+    }
+    .place_order_detail {
+        width: 20rem;
+        margin: 2rem 5rem 0 0;
+    }
+    .place_order_attention {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    .product_features .feature_row {
+        display: none;
+    }
+}
+@media (max-width: 42rem) {
+    .place_order_detail {
+        font-size: 80%;
+        width: 17rem;
+    }
+}
+@media (max-width: 37.5rem) {
+    .place_order_detail {
+        width: 13rem;
+    }
+}
+@media (max-width: 33rem) {
+    .place_order_right_side {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.place_order_paper {
+    margin-left: 3rem;
 }
 .place_order_paper.upper {
     display: flex;
@@ -79,4 +180,19 @@ hr {
     padding: .1rem 0;
     color: var(--primary-dark-color);
     cursor: pointer;
+}
+@media (max-width: 64rem) {
+    .place_order_paper {
+        margin-left: 0;
+    }
+}
+@media (max-width: 48rem) {
+    .place_order_paper.upper {
+        display: none;
+    }
+}
+@media (max-width: 37.5rem) {
+    .place_order_paper.lower h4 {
+        display: none;
+    }
 }

@@ -24,3 +24,17 @@
     border: none;
     margin: 1rem 0;
 }
+@media (max-width: 40rem) {
+    .check_page_paper_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .check_page_paper_text {
+        margin-top: 1rem;
+        line-height: 1.2rem;
+        font-size: .9rem;
+    }
+    .check_page_paper_text span {
+        font-size: 1.3rem;
+    }
+}

@@ -5,10 +5,17 @@
     display: flex;
     padding: 3.5rem 2rem 2rem;
 }
+@media (max-width: 48rem) {
+    .check_page {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
 .check_page_left {
     background-color: white;
     width: 50rem;
-    height: 32rem;
+    height: 100%;
     border-radius: .25rem;
     margin-right: 2rem;
     overflow-y: auto;
@@ -29,10 +36,27 @@
 .check_page_left hr {
     margin: 1rem 0;
 }
+@media (max-width: 48rem) {
+    .check_page_left {
+        margin-top: 1rem;
+        width: 85%;
+        height: 48rem;
+    }
+}
+@media (max-width: 40rem) {
+    .check_page_left h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 40rem) {
+    .check_page_left h1 {
+        font-size: 1.8rem;
+    }
+}
 
 .check_page_right {
     background-color: white;
-    width: 25rem;
+    width: 70%;
     height: 15rem;
     border-radius: .25rem;
     display: flex;
@@ -56,4 +80,9 @@
     padding: .4rem 0;
     color: var(--primary-dark-color);
     cursor: pointer;
+}
+@media (max-width: 24rem) {
+    .check_page_right h1 {
+        font-size: 1.1rem;
+    }
 }
