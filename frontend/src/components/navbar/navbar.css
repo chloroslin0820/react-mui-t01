@@ -17,60 +17,21 @@ span {
     padding-top: .3rem;
     justify-content: center;
 }
+@media (max-width: 78rem) {
+    .navbar_component {
+        width: 100%;
+        white-space: nowrap;
+        height: 7rem;
+        display: block;
+        justify-content: baseline;
+    }
+}
 
 .navbar_logo {
     background: var(--sprite-link) no-repeat -9px -50px;
 	width: 6.125rem;
 	height: 1.9375rem;
     margin: .625rem;
-}
-
-.navbar_locator {
-    display: flex;
-    margin: .75rem .5rem;
-}
-.navbar_location {
-    color: white;
-    font-weight: bold;
-    margin-left: .3125rem;
-}
-.navbar_locator_image {
-    background: var(--sprite-link) no-repeat -70px -305px;
-	width: 1.1875rem;
-	height: 1.375rem;
-}
-
-.navbar_search_component {
-    display: flex;
-    margin-left: .75rem;
-}
-.navbar_search_dropdown {
-    width: 3.75rem;
-    height: 2.4rem;
-    margin-top: .5rem;
-    background-color: #e6e5e5;
-    border-radius: .3125rem 0 0 .3125rem;
-    text-align-last: center;
-}
-.navbar_search_box {
-    width: 36rem;
-    height: 2.375rem;
-    margin-top: .5rem;
-    font-size: 1rem;
-    padding-left: .5rem;
-}
-.navbar_search_icon_container {
-    background-color: var(--amazon-orange-color);
-    height: 2.4rem;
-    width: 3rem;
-    border-radius: 0 .3125rem .3125rem 0;
-    margin-top: .5rem;
-}
-.navbar_search_icon {
-    background: var(--sprite-link) no-repeat -9px -289px;
-	width: 1.4375rem;
-	height: 1.4375rem;
-    margin: .55rem .7rem;
 }
 
 .navbar_right {
@@ -109,6 +70,36 @@ span {
     left: 1.7rem;
     color: var(--amazon-orange-color);
 }
+.person_icon {
+    display: none;
+}
+@media (max-width: 78rem) {
+    .navbar_right {
+        justify-content: right;
+        width: 100%;
+        margin-left: -.3rem;
+        margin-top: -2.6rem;
+    }
+    .navbar_right_cart {
+        display: flex;
+        position: relative;
+    }
+    .navbar_right_sign_in,
+    .navbar_right_return,
+    .navbar_right_cart {
+        padding: 0 .5rem;
+    }
+}
+@media (max-width: 28rem) {
+    .navbar_right_sign_in,
+    .navbar_right_return,
+    .navbar_right_cart .text {
+        display: none;
+    }
+    .person_icon {
+        display: flex;
+    }
+}
 
 /* footer */
 .navbar_footer {
@@ -129,4 +120,18 @@ span {
 .navbar_footer_text span {
     margin: .25rem .5rem;
     font-weight: normal;
+}
+@media (max-width: 64rem) {
+    .navbar_footer {
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 1rem;
+        overflow-x: auto;
+        background-color: var(--primary-dark-color);
+    }
+
+    .navbar_footer_menu,
+    .navbar_footer_text {
+        white-space: nowrap;
+    }
 }
