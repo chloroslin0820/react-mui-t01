@@ -11,6 +11,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
+    color: var(--primary-dark-color);
 }
 .product_card_rating_container {
     font-size: .875rem;

@@ -1,0 +1,26 @@
+.check_page_paper_container {
+    padding: 0 2rem;
+}
+.check_page_paper_container_blank {
+    height: 4vh;
+}
+.check_page_paper_content {
+    display: flex;
+    padding: 2rem;
+}
+.check_page_paper_text {
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+}
+.check_page_paper_text span {
+    font-size: 2rem;
+    color: orangered;
+}
+.check_page_left img {
+    width: 10rem;
+    margin-right: .9rem;
+}
+.paper_break {
+    border: none;
+    margin: 1rem 0;
+}

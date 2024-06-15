@@ -103,9 +103,10 @@ span {
     margin-right: .25rem;
 }
 .navbar_right_cart .cart_badge {
+    font-size: .85rem;
     position: absolute;
-    top: -0.6rem;
-    left: 1.8rem;
+    top: -.6rem;
+    left: 1.7rem;
     color: var(--amazon-orange-color);
 }
 

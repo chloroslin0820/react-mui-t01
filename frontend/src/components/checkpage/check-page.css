@@ -29,31 +29,6 @@
 .check_page_left hr {
     margin: 1rem 0;
 }
-.check_page_paper_container {
-    padding: 0 2rem;
-}
-.check_page_paper_container_blank {
-    height: 4vh;
-}
-.check_page_paper_content {
-    display: flex;
-    padding: 2rem;
-}
-.check_page_paper_text {
-    line-height: 2.3rem;
-    font-size: 120%;
-}
-.check_page_paper_text span {
-    font-size: 3rem;
-}
-.check_page_left img {
-    width: 13rem;
-    margin-right: .9rem;
-}
-.paper_break {
-    border: none;
-    margin: 1rem 0;
-}
 
 .check_page_right {
     background-color: white;
@@ -66,8 +41,11 @@
     align-items: center;
     line-height: 3,2rem;
 }
+.check_page_right h1 {
+    font-size: 1.5rem;
+}
 .check_page_right span {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .check_page_right_btn {
     font-size: 1.2rem;
@@ -77,4 +55,5 @@
     border-radius: .25rem;
     padding: .4rem 0;
     color: var(--primary-dark-color);
+    cursor: pointer;
 }

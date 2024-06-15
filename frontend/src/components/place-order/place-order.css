@@ -78,4 +78,5 @@ hr {
     border-radius: .25rem;
     padding: .1rem 0;
     color: var(--primary-dark-color);
+    cursor: pointer;
 }

@@ -2,12 +2,32 @@ import { Paper } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Rating from '@mui/material/Rating';
 import getSymbolFromCurrency from 'currency-symbol-map';
-import React from 'react';
+import { React, useContext, useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext.jsx';
 import { Products } from '../../products-mockdata/ProductMockData.js';
+import LoadingPage from '../loadingpage/LoadingPage';
 import './place-order.css';
 
 const PlaceOrder = () => {
-  let arr = 1;
+  const [productDetail, setProductDetail] = useState([]);
+  const { id } = useParams();
+  const { increment } = useContext(CartContext);
+
+  useEffect(() => {
+    let aimedProduct = Products.filter((product) => {
+      if(product.id == id) return product;
+    })
+    setProductDetail(aimedProduct[0]);
+  }, []);
+
+  if (!productDetail) {
+    return <LoadingPage />;
+  }
+
+  const addToCart = () => {
+    increment(productDetail);
+  }
 
   return (
     <div className="place_order">
@@ -15,21 +35,21 @@ const PlaceOrder = () => {
         <>
           <Grid item xs={5}>
             <div className="place_order_img_grid">
-              <img className="place_order_img" src={Products[arr].image} />
+              <img className="place_order_img" src={productDetail.image} />
             </div>
           </Grid>
           <Grid item xs={4}>
             <div className="place_order_detail">
-              <div className="place_order_name">{Products[arr].name}</div>
+              <div className="place_order_name">{productDetail.name}</div>
               <div className="place_order_rating_row">
-                <Rating name="read-only" value={Products[arr].rating / 2} readOnly />
-                <div>{Products[arr].rating}</div>
+                <Rating name="read-only" value={productDetail.rating / 2} readOnly />
+                <div>{productDetail.rating}</div>
               </div>
               <hr />
               <div className="place_order_price">
-                <p>Price: <span>{getSymbolFromCurrency( 'USD' )}{Products[arr].price}</span></p>
+                <p>Price: <span>{getSymbolFromCurrency( 'USD' )}{productDetail.price}</span></p>
                 <p>FREE delivery: Wednesday, Aug 18</p>
-                <p>EMI starts at {getSymbolFromCurrency( 'USD' )}{Products[arr].price - 5432}. No Cost EMI available</p>
+                <p>EMI starts at {getSymbolFromCurrency( 'USD' )}{productDetail.price - 5432}. No Cost EMI available</p>
               </div>
               <hr />
               <div className="place_order_attention">
@@ -95,9 +115,11 @@ const PlaceOrder = () => {
                   Please choose a different delivery location.
                 </h4>
                 <div className="place_order_purchase">
-                  <button className="place_order_btn add">Add to Cart</button>
+                  <button className="place_order_btn add" onClick={addToCart}>Add to Cart</button>
                   <hr />
-                  <button className="place_order_btn buy">Buy Now</button>
+                  <Link to="/checkout">
+                    <button className="place_order_btn buy">Buy Now</button>
+                  </Link>
                 </div>
               </Paper>
             </div>

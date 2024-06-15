@@ -1,18 +1,26 @@
 import ReorderIcon from '@mui/icons-material/Reorder';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 import './navbar.css';
 
 class Navbar extends Component {
+    static contextType = CartContext;
+
     constructor(props) {
         super(props);
         this.state = {};
     }
 
     render() {
+        let { items, size, increment } = this.context;
+
         return (
             <div>
                 <div className="navbar_component">
-                    <div className="navbar_logo"></div>
+                    <Link to="/">
+                        <div className="navbar_logo"></div>
+                    </Link>
 
                     <div className="navbar_locator">
                         <div className="navbar_locator_image"></div>
@@ -52,7 +60,7 @@ class Navbar extends Component {
                         </div>
                         <div className="navbar_right_cart">
                             <div className="cart_img"></div>
-                            <span className="cart_badge">0</span>
+                            <span className="cart_badge">{size}</span>
                             <span>Cart</span>
                         </div>
                     </div>
