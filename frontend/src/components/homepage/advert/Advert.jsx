@@ -3,7 +3,7 @@ import './advert.css';
 import PicFour from './pic-four/PicFour';
 import PicOne from './pic-one/PicOne';
 
-const Advert = ({ pic_num }) => {
+const Advert = ({ id, img, pic_num }) => {
   return (
     <div className="advertfour_main">
       <div className="advertfour_header">
@@ -11,8 +11,8 @@ const Advert = ({ pic_num }) => {
       </div>
         {
             pic_num == 1 
-            ? <PicOne />
-            : <PicFour />
+            ? <PicOne id={id} img={img} />
+            : <PicFour id={id} img={img} />
         }
       <div className="advertfour_footer">
         <a href="">See more</a>
